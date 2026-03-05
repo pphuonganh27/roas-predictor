@@ -9,7 +9,7 @@ import os
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="ROAS Prediction", layout="wide")
 
-st.title("📈 ROAS Curve Learner & Predictor (D365)")
+st.title("📈 ROAS Prediction")
 st.markdown("Designed for **Mid-term Hybrid Hypercasual Puzzle** games with projections up to one year.")
 
 # --- PERSISTENCE LOGIC ---
@@ -254,3 +254,4 @@ if predict_file and learned_data:
 elif predict_file and not learned_data:
 
     st.warning("Please upload historical data in the sidebar first to learn the model.")
+
