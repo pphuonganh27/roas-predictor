@@ -7,7 +7,7 @@ import json
 import os
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="ROAS Predictor: Full Year (D365) Projection", layout="wide")
+st.set_page_config(page_title="ROAS Prediction", layout="wide")
 
 st.title("📈 ROAS Curve Learner & Predictor (D365)")
 st.markdown("Designed for **Mid-term Hybrid Hypercasual Puzzle** games with projections up to one year.")
@@ -252,4 +252,5 @@ if predict_file and learned_data:
     st.download_button("📥 Download Predictions", csv, "roas_predictions_d365.csv", "text/csv")
 
 elif predict_file and not learned_data:
+
     st.warning("Please upload historical data in the sidebar first to learn the model.")
